@@ -60,7 +60,10 @@
 	gulp.task("concat:vendor", function()
 	{
 		return gulp
-			.src([dependenciesPath + "/jquery/dist/jquery.js"])
+			.src([
+				dependenciesPath + "/jquery/dist/jquery.min.js",
+				dependenciesPath + "/fullpage.js/dist/jquery.fullpage.min.js" 
+			])
 			.pipe(concat("vendor.js"))
 			.pipe(gulp.dest(distJsPath));
 	});
@@ -71,7 +74,7 @@
 	gulp.task("concat-css:vendor", function()
 	{
 		return gulp
-			.src(dependenciesPath + "/css-reset/reset.min.css")
+			.src(dependenciesPath + "/css-reset/reset.css")
 			.pipe(minifyPipeline.minifyCSS({
 				addSourceMaps: false,
 				concat: true,

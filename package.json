@@ -7,6 +7,7 @@
   "author": "Stanley Sathler <stanley@lustrel.com.br>",
   "license": "MIT",
   "dependencies": {
+    "css-reset": "^0.0.1",
     "fullpage.js": "^2.9.4",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
