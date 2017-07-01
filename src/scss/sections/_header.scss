@@ -1,0 +1,24 @@
+.header {
+
+	color: white;
+
+	.image { 
+		background: url('../img/header-bg.jpg') no-repeat;
+		background-size: cover;
+		height: calc(100% - 50px); 
+	}
+
+	.action {
+		@include border-radius(10px);
+		@include vertical-center();
+
+		background-color: $color-accent-normal;
+		display: inline-block;
+		font-size: 1.6em;
+		height: 64px;
+		margin-top: -32px;
+		padding: 25px 35px;
+		position: absolute;
+		text-transform: uppercase;
+	}
+}

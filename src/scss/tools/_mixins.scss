@@ -1,0 +1,16 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+	 -moz-border-radius: $radius;
+	  -ms-border-radius: $radius;
+		  border-radius: $radius;
+}
+
+@mixin vertical-center() {
+	position: absolute;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+		  -ms-transform: translateX(-50%);
+				  transform: translateX(-50%);
+}
